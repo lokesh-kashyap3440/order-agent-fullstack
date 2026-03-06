@@ -12,8 +12,3 @@ services:
         value: 3001
       - key: ORDER_TOKEN
         value: demo-token-123   # change this in Render dashboard → Environment
-
-    disk:
-      name: order-agent-data
-      mountPath: /data
-      sizeGB: 1
