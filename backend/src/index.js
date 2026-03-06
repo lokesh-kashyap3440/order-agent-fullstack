@@ -1,12 +1,18 @@
 import express  from "express";
 import cors     from "cors";
 import { v4 as uuid } from "uuid";
+import { fileURLToPath } from "url";
+import path from "path";
 import { ORDERS, getTrackingSteps } from "./data.js";
 import { runAgentStream }           from "./agent.js";
 import {
   listThreads, getThread, createThread,
   appendMessages, updateTitle, deleteThread,
 } from "./history.js";
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+// In Docker: /app/backend/src → public is at /app/backend/public
+const publicDir = path.join(__dirname, "../public");
 
 const app  = express();
 const PORT = process.env.PORT || 3001;
@@ -145,6 +151,15 @@ app.post("/api/threads/:id/chat", async (req, res) => {
 
 // ── Health ───────────────────────────────────────────────────────────────────
 app.get("/api/health", (_, res) => res.json({ status: "ok", ts: new Date().toISOString() }));
+
+// ── Serve React frontend in production ───────────────────────────────────────
+if (process.env.NODE_ENV === "production") {
+  console.log("[static] serving frontend from:", publicDir);
+  app.use(express.static(publicDir));
+  app.get("*", (req, res) => {
+    res.sendFile(path.join(publicDir, "index.html"));
+  });
+}
 
 app.listen(PORT, () => {
   console.log(`
