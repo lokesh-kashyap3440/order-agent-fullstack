@@ -1,0 +1,65 @@
+{
+  "d7fdea00-69b5-4647-b998-b2982735a37c": {
+    "id": "d7fdea00-69b5-4647-b998-b2982735a37c",
+    "title": "Show recent orders",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Show recent orders",
+        "ts": "2026-03-06T11:44:03.174Z"
+      },
+      {
+        "role": "user",
+        "content": "show recent orders",
+        "ts": "2026-03-06T11:44:47.859Z"
+      },
+      {
+        "role": "user",
+        "content": "show recent orders",
+        "ts": "2026-03-06T11:47:56.331Z"
+      },
+      {
+        "role": "user",
+        "content": "show recent orders",
+        "ts": "2026-03-06T11:48:11.427Z"
+      },
+      {
+        "role": "user",
+        "content": "show recent orders",
+        "ts": "2026-03-06T11:50:51.688Z"
+      },
+      {
+        "role": "user",
+        "content": "show recent orders",
+        "ts": "2026-03-06T11:52:20.490Z"
+      },
+      {
+        "role": "assistant",
+        "content": "Here are the 10 most recent orders:\n\n1. Order ID: ORD-1009\n   Status: Processing\n   Customer: Customer #1009\n   Item: Ergonomic Mouse (2 units)\n   Total: $139.97\n   Shipping: UPS, estimated delivery on 2026-03-07\n\n2. Order ID: ORD-1010\n   Status: Shipped\n   Customer: Customer #1010\n   Item: Wireless Headphones Pro (1 unit)\n   Total: $139.98\n   Shipping: UPS, estimated delivery on 2026-03-09\n\n3. Order ID: ORD-1011\n   Status: Shipped\n   Customer: Customer #1011\n   Item: Ergonomic Mouse (2 units)\n   Total: $139.97\n   Shipping: UPS, estimated delivery on 2026-03-09\n\n4. Order ID: ORD-1008\n   Status: Pending\n   Customer: Customer #1008\n   Item: Mechanical Keyboard TKL (2 units)\n   Total: $189.97\n   Shipping: UPS, estimated delivery on 2026-03-10\n\n5. Order ID: ORD-1007\n   Status: Pending\n   Customer: Customer #1007\n   Item: Mechanical Keyboard TKL (1 unit)\n   Total: $99.98\n   Shipping: UPS, estimated delivery on 2026-03-07\n\n6. Order ID: ORD-1012\n   Status: Processing\n   Customer: Customer #1012\n   Item: Mechanical Keyboard TKL (2 units)\n   Total: $189.97\n   Shipping: UPS, estimated delivery on 2026-03-07\n\n7. Order ID: ORD-1013\n   Status: Pending\n   Customer: Customer #1013\n   Item: Mechanical Keyboard TKL (1 unit)\n   Total: $99.98\n   Shipping: UPS, estimated delivery on 2026-03-10\n\n8. Order ID: ORD-1006\n   Status: Pending\n   Customer: Customer #1006\n   Item: Ergonomic Mouse (1 unit)\n   Total: $74.98\n   Shipping: DHL, estimated delivery on 2026-03-08\n\n9. Order ID: ORD-1005\n   Status: Processing\n   Customer: Customer #1005\n   Item: Wireless Headphones Pro (2 units)\n   Total: $269.97\n   Shipping: DHL, estimated delivery on 2026-03-09\n\n10. Order ID: ORD-1014\n    Status: Pending\n    Customer: Customer #1014\n    Item: Ergonomic Mouse (1 unit)\n    Total: $74.98\n    Shipping: UPS, estimated delivery on 2026-03-07\n\nLet me know if you'd like to check the status of a specific order or track a shipment.",
+        "ts": "2026-03-06T11:52:22.465Z"
+      },
+      {
+        "role": "user",
+        "content": "check order status for ORD-1009",
+        "ts": "2026-03-06T11:52:48.530Z"
+      },
+      {
+        "role": "assistant",
+        "content": "The status of order ORD-1009 is currently \"processing\". Here are the details:\n\nOrder ID: ORD-1009\nCustomer: Customer #1009\nItem: Ergonomic Mouse (2 units)\nTotal: $139.97\nShipping: UPS, tracking number UP262137429267\nEstimated Delivery: March 7, 2026\n\nThe payment has been successfully made using Mastercard. If you'd like to track the shipment, I can help you with that.",
+        "ts": "2026-03-06T11:52:49.164Z"
+      },
+      {
+        "role": "user",
+        "content": "yes",
+        "ts": "2026-03-06T11:53:02.006Z"
+      },
+      {
+        "role": "assistant",
+        "content": "Here's the updated status of your order ORD-1009:\n\nOrder ID: ORD-1009\nStatus: Processing\nCarrier: UPS\nTracking Number: UP262137429267\nEstimated Delivery: March 7, 2026, 11:50:32 AM\nDestination: 542 Main St, San Francisco, US\n\nHere are the steps your order has gone through so far:\n\n1. Order Placed: Completed on March 6, 2026, 11:53:02 AM\n2. Payment Confirmed: Completed on March 4, 2026, 11:53:02 AM\n3. Picked & Packed: Currently in progress at Warehouse A – New Jersey\n4. Shipped: Pending\n5. Out for Delivery: Pending\n6. Delivered: Pending\n\nYour order is currently being picked and packed at Warehouse A in New Jersey. Once it's shipped, you'll receive further updates on the delivery status. If you have any questions or concerns, feel free to ask!",
+        "ts": "2026-03-06T11:53:03.247Z"
+      }
+    ],
+    "created_at": "2026-03-06T11:43:59.321Z",
+    "updated_at": "2026-03-06T11:53:03.247Z"
+  }
+}

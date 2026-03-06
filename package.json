@@ -1,0 +1,13 @@
+{
+  "name": "order-agent",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently -n backend,frontend -c cyan,magenta \"pnpm --filter backend dev\" \"pnpm --filter frontend dev\"",
+    "build": "pnpm --filter frontend build",
+    "test": "node backend/test.js"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
